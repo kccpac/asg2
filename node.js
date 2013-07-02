@@ -34,7 +34,7 @@ do
      primeArray = [String(i)];
    else
      primeArray.push(String(i))
-} while (i < 100);
+} while (primeArray.length < 100);
 // console.log(primeArray);
 
 fs.writeFileSync(outfile, primeArray);
