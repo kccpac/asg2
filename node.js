@@ -35,6 +35,17 @@ do
    else
      primeArray.push(String(i))
 } while (primeArray.length < 100);
-// console.log(primeArray);
+var out = null;
 
-fs.writeFileSync(outfile, primeArray);
+len = primeArray.length;
+out = primeArray[0] + ", ";
+for (i=1; i<len-1; i++)
+{
+      out = out + primeArray[i] + ", ";
+
+}
+out = out + String(primeArray[len-1])
+
+console.log(String(primeArray.length));
+
+fs.writeFileSync(outfile, out);
