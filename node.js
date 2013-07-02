@@ -13,7 +13,7 @@ function IsPrime(pArray, val)
   }
   //console.log("Value: " + String(val));
   //console.log("# Divisible: " + String(nZeroQuotient) + " pArray len: " + String(pArray.length));
-  if (nZeroQuotient > 1)
+  if (nZeroQuotient > 0)
     return false;
 
   return true;
@@ -23,7 +23,7 @@ function IsPrime(pArray, val)
 var fs = require('fs');
 var outfile = "part2.txt";
 var primeArray = null;
-var i = 0;
+var i = 1;
 do 
 {
    i = i + 1;
