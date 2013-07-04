@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+
 function IsPrime(pArray, val)
 {
   var nZeroQuotient = 0;
@@ -11,7 +12,6 @@ function IsPrime(pArray, val)
      if (out == 0)
        nZeroQuotient = nZeroQuotient + 1;
   }
-  //console.log("Value: " + String(val));
   //console.log("# Divisible: " + String(nZeroQuotient) + " pArray len: " + String(pArray.length));
   if (nZeroQuotient > 0)
     return false;
@@ -37,15 +37,15 @@ do
 } while (primeArray.length < 100);
 var out = null;
 
-len = primeArray.length;
-out = primeArray[0] + ", ";
-for (i=1; i<len-1; i++)
-{
-      out = out + primeArray[i] + ", ";
+//len = primeArray.length;
+//out = primeArray[0] + ", ";
+//for (i=1; i<len-1; i++)
+//{
+//      out = out + primeArray[i] + ", ";
 
-}
-out = out + String(primeArray[len-1])
+//}
+//out = out + String(primeArray[len-1])
 
-console.log(String(primeArray.length));
+//console.log(String(primeArray.length));
 
-fs.writeFileSync(outfile, out);
+fs.writeFileSync(outfile, primeArray);
